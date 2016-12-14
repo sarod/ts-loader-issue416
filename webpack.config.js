@@ -11,8 +11,20 @@ module.exports = {
     extensions: ['.ts', '.js']
   },
   module: {
-    loaders: [
-      { test: /\.ts$/, loader: 'ts-loader' }
-    ]
+    rules: [
+              {
+                 test: /\.ts$/,
+                 use: [
+                     "ts-loader"
+                  ],
+               },
+               {
+                  test: /\.css$/,
+                  use: [
+                     "style-loader",
+                     {loader: "css-loader", options: {modules: false}}
+                  ],
+               }
+         ]
   }
 }

@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "watch": false,
+    "module": "commonjs",
+    "sourceMap": false,
+    "noEmit": false,
+    "isolatedModules": true,
+    "moduleResolution": "node",
+
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "exclude": [
+    "dist",
+    "node_modules"
+  ]
+}
